@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label  Content="Cognome" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="64"/>
+        <TextBox Name="txtnome" HorizontalAlignment="Left" Height="23" Margin="127,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="42"/>
+        <TextBox Name="txtcognome" HorizontalAlignment="Left" Height="23" Margin="127,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144"/>
+        <Label Content="Sesso" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Data di nascita" HorizontalAlignment="Left" Margin="14,194,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Città di residenza" HorizontalAlignment="Left" Margin="14,255,0,0" VerticalAlignment="Top" Width="107"/>
+        <RadioButton Name="rdbF" Content="F" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,132,0,0" Height="20" Width="30"/>
+        <RadioButton Name="rdbM" Content="M" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="162,132,0,0" Height="20" Width="33"/>
+        <DatePicker Name="dtpdata"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,196,0,0"/>
+        <ComboBox x:Name="cmbresidenza" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Margin="126,259,0,0"/>
+        <Label Content="importo richiesto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,14,0,0" Width="111" Height="22"/>
+        <Label Content="N.Rate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,70,0,0" Height="23" Width="85"/>
+        <Label Content="Percentuale" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,126,0,0" Width="85"/>
+        <Label Content="Importo da restituire" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="276,196,0,0" Height="24" Width="132"/>
+        <Label Content="Importo per rata" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,254,0,0" Height="26" Width="118" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.099"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox Name="txtimportorichiesto" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="408,14,0,0"/>
+        <TextBox Name="txtrate" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="408,70,0,0"/>
+        <TextBox  Name="txtpercentuale" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="408,126,0,0"/>
+        <TextBox IsReadOnly="True" Name="txtimportodarestituire" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="408,194,0,0"/>
+        <TextBox IsReadOnly="True" Name="txtimportoperrata" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="408,255,0,0"/>
+        <Button Content="CALCOLA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Margin="533,14,0,0" Height="58" Click="Calcola_Click"/>
+        <Button Content="NUOVO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Margin="533,106,0,0" Height="58" Click="Nuovo_Click_2"/>
+        <Button Content="STAMPA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Margin="533,196,0,0" Height="58" Click="Stampa_Click_1"/>
+        <Label Name="lbltotale" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,297,0,0" Height="112" Width="772"/>
+
+        
+    </Grid>
+</Window>
